@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 34d43b34f6daa4eb9af000c0f7bae815
+timeCreated: 1510923982
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - startGameUi: {instanceID: 0}
+  - gameOverUi: {instanceID: 0}
+  - startGameAudio: {fileID: 11400000, guid: d810af12a44eb4e058b0ece3f3d667e3, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
