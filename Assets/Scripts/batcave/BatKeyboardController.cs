@@ -9,12 +9,23 @@ public class BatKeyboardController : BatController {
     /// <summary>
     /// Returns true if spacebar is down
     /// </summary>
-	public override bool WantsToFlyUp ()
-	{
-		if (Input.GetKey ("space")) return true;
-
+	public override bool WantsToFlyUp () {
+		
+		if (Input.GetKey ("space")) {
+			return true;
+		}
 		return false;
 	
 	}
+
+	public void Awake()
+    {
+        Debug.Log("Keyboard.Awake");
+    }
+
+    public void OnDestroy()
+    {
+        Debug.Log("Keyboard.OnDestroy");
+    }
 }
 }

@@ -13,3 +13,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controllers:
   - {fileID: 11400000, guid: 8c1fdca360a68459a9bb0f99e4a4e23a, type: 2}
+  - {fileID: 11400000, guid: dd5b11ad00a4e4fa99faad2100d34f11, type: 2}

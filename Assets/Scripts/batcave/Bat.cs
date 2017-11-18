@@ -59,9 +59,9 @@ public class Bat : MonoBehaviour {
 
         flyUpBoolAnimParamId = Animator.StringToHash(flyUpBoolAnimParamName);
         isAliveBoolAnimParamId = Animator.StringToHash(isAliveBoolAnimParamName);
-
-        GameInputCapture.OnTouchDown += OnTouchDown;
-        GameInputCapture.OnTouchUp += OnTouchUp;
+//
+//        GameInputCapture.OnTouchDown += OnTouchDown;
+//        GameInputCapture.OnTouchUp += OnTouchUp;
 
         GameManager.OnGameStarted += OnGameStarted;
         GameManager.OnGameReset += OnGameReset;
@@ -71,8 +71,8 @@ public class Bat : MonoBehaviour {
     }
 
     protected void OnDestroy() {
-        GameInputCapture.OnTouchDown -= OnTouchDown;
-        GameInputCapture.OnTouchUp -= OnTouchUp;
+//        GameInputCapture.OnTouchDown -= OnTouchDown;
+//        GameInputCapture.OnTouchUp -= OnTouchUp;
         GameManager.OnGameStarted -= OnGameStarted;
         GameManager.OnGameReset -= OnGameReset;
     }
@@ -144,14 +144,14 @@ public class Bat : MonoBehaviour {
         enabled = true;
     }
 
-    private void OnTouchDown(PointerEventData e) {
-        // Check that the event was not already handled by the GameManager.
-        if (!isAlive || e.used) return;
-        FlyUp = true;
-    }
-
-    private void OnTouchUp(PointerEventData e) {
-        FlyUp = false;
-    }
+//    private void OnTouchDown(PointerEventData e) {
+//        // Check that the event was not already handled by the GameManager.
+//        if (!isAlive || e.used) return;
+//        FlyUp = true;
+//    }
+//
+//    private void OnTouchUp(PointerEventData e) {
+//        FlyUp = false;
+//    }
 }
 }
